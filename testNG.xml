@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Datadriven test" parallel="false" >
+
+    <test name="iPhone X" group-by-instances="true" >
+        <classes>
+            <class name="ExampleTest"/>
+            <parameter name="platformName" value="iOS" />
+            <parameter name="automationName" value="XCUITEST" />
+            <parameter name="browserName" value="safari" />
+            <parameter name="platformVersion" value="11.4" />
+            <parameter name="deviceName" value="iPhone X" />
+            <parameter name="udid" value="CF9C4F5E-7D64-4AFD-ABBF-D68762A0C59F" />
+        </classes>
+    </test>
+
+    <test name="iPhone 8" group-by-instances="true" >
+        <classes>
+            <class name="ExampleTest"/>
+            <parameter name="platformName" value="iOS" />
+            <parameter name="automationName" value="XCUITEST" />
+            <parameter name="browserName" value="safari" />
+            <parameter name="platformVersion" value="11.4" />
+            <parameter name="deviceName" value="iPhone 8" />
+            <parameter name="udid" value="7CD03CAD-A126-4F9F-8A70-750F370F1081" />
+        </classes>
+    </test>
+
+    <test name="iPhone 7 Plus" group-by-instances="true" >
+        <classes>
+            <class name="ExampleTest"/>
+            <parameter name="platformName" value="iOS" />
+            <parameter name="automationName" value="XCUITEST" />
+            <parameter name="browserName" value="safari" />
+            <parameter name="platformVersion" value="11.4" />
+            <parameter name="deviceName" value="iPhone 7 Plus" />
+            <parameter name="udid" value="BCB2A8F4-4425-43E9-BA43-2044E2522CC0" />
+        </classes>
+    </test>
+
+
+    <test name="Android Emulator" group-by-instances="true" >
+        <classes>
+            <class name="ExampleTest"/>
+            <parameter name="platformName" value="Android" />
+            <parameter name="automationName" value="Appium" />
+            <parameter name="browserName" value="Chrome" />
+            <parameter name="platformVersion" value="8.0" />
+            <parameter name="deviceName" value="emulator-5554" />
+            <parameter name="udid" value="emulator-5554" />
+        </classes>
+    </test>
+
+
+</suite>
